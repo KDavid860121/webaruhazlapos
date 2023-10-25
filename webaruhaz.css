@@ -1,0 +1,34 @@
+header li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    display: inline-block;
+    font-weight: 550;
+    font-size: 0.8rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.menusor {
+    text-align: right;
+}
+
+.almenu li {
+    width: 9rem;
+    display: flex;
+    padding: 0.8rem 0;
+
+}
