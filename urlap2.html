@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="./urlap2.css">
+</head>
+<body>
+    <div class="keret">
+        <form action="urlap2.html">
+            <h1>Regisztráció</h1>
+            <div class="felso">
+                <label for="megszolitas">Megszólítás <sup>*</sup></label>
+            </div>    
+            <div class="felso">
+                <input type="radio" name="megszolitas" id="ur">
+                <label for="megszolitas">Úr</label>
+                <input type="radio" name="megszolitas" id="urholgy">
+                <label for="megszolitas">Úrhölgy</label>
+            </div>
+            <div class="rendezes">
+                <label for="vnev">Vezetéknév <sup>*</sup></label>
+                <input type="text" name="vnev" id="vnev">
+            </div>
+            <div class="rendezes">
+                <label for="knev">Keresztnév <sup>*</sup></label>
+                <input type="text" name="knev" id="knev">
+            </div>
+            <div class="rendezes">
+                <label for="szuldatum">Születési dátum <sup>*</sup></label>
+                <input type="date" name="szuldatum" id="szuldatumev">
+            </div>
+            <div class="rendezes">
+                <label for="mail">E-Mail cím <sup>*</sup></label>
+                <input type="email" name="mail" id="mail">
+            </div>
+            <div class="rendezes">
+                <label for="mail2">E-Mail cím ismételt megadása <sup>*</sup></label>
+                <input type="email" name="mail2" id="mail2">
+            </div>
+            <div class="rendezes">
+                <label for="jelszo">Jelszó <sup>*</sup></label>
+                <input type="password" name="jelszo" id="jelszo">
+            </div>
+            <div class="rendezes">
+                <label for="jelszo2">Jelszó ismételt megadása <sup>*</sup></label>
+                <input type="password" name="jelszo2" id="jelszo2">
+            </div>
+            <div class="flex">
+                <p>* - kötelező mezők</p>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="aszf" id="aszf">
+                <label for="aszf" id="aszf">Tudomásul vettem és elfogadom az ÁSZF-ben foglaltakat. <sup>*</sup></label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="hirlevel" id="hirlevel">
+                <label for="hirlevel">Szeretnék feliratkozni a A dm Hírlevelem-re. A hírlevélről bármikor liratkozhatok. A Hozzájárulás a dm hírlevélhez-t elolvastam és elfogadom</label>
+            </div class="flex">
+            <div class="flex">
+                <button onclick="reg()">Regisztráció</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="./reg.js"></script>
+</body>
+</html>

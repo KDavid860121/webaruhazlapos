@@ -1,0 +1,70 @@
+.keret {
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid black;
+    max-width: 800px;
+    background-color: aqua;
+    border-radius: 30px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.keret form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: larger;
+}
+
+#aszf {
+    display: flex;
+}
+
+.rendezes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+label, input {
+    padding: 6px 0px;
+}
+
+
+form h1 {
+    text-align: center;
+}
+
+.felso, .rendezes, .flex {
+    margin: 0px 55px;
+}
+
+button {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+input {
+margin-bottom: 5px;
+}
+
+
+@media(max-width: 291px) {
+    label {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    
+}

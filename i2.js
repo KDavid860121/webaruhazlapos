@@ -1,0 +1,1 @@
+document.getElementById("tart2").innerHTML = utvonal[0] + " " + "/" + " " + utvonal[1] + " " + "/" + " " + utvonal[2] + " " + "/" + " " + utvonal[3]

@@ -1,0 +1,240 @@
+
+/* header {
+    background-color: #262626;
+} */
+
+.kartyakeret img {
+    transition: transform 1s;
+}
+
+
+.kartyakeret img:hover {
+    transform: scale(1.1);
+}
+
+.kartyakeret:hover img {
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.navlink {
+    transition: 0.7s ease;
+}
+
+.navlink:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width: 1000px) {
+    header {
+        background-color: #262626;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 25px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+   .navigacio {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   }
+
+   .elso > a {
+    color: whitesmoke;
+   }
+  
+
+   .show {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: -160px;
+    height: 160px;
+    padding: 5px;
+   }
+
+   .show li {
+    padding: 8px;
+   }
+
+
+    .navigacio li:hover > ul {
+        display: block;
+        
+    }
+
+
+
+
+   aside {
+    margin-top: 110px;
+    width: 25%;
+   }
+}
+
+@media(max-width: 460px) {
+    h1 {
+        border-style: hidden;
+    }
+    
+    #fajta {
+        width: 60%;
+    }
+
+}
+
+@media(max-width: 430px) {
+    .kartyakeret {
+        width: 80%;
+    }
+
+    .kartyakeret img {
+        width: 80%;
+    }
+
+    .kartyakeret a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .kategoriak h1 {
+        font-size: medium;
+    }
+
+    .kategoriak ul li {
+        font-size: medium;
+        transform: rotate(90deg);
+        transition: transform 1s;
+        border-bottom: none;
+    }
+
+    .kategoriak li:nth-child(1) {
+        padding-left: 25%;
+    }
+
+    .kategoriak li:nth-child(2) {
+        padding-left: 45%;
+    }
+
+    .kategoriak li:nth-child(3) {
+        padding-left: 58%;
+    }
+
+    .kategoriak li:nth-child(4) {
+        padding-left: 90%;
+    }
+
+    .kategoriak li:nth-child(5) {
+        padding-left: 80%;
+    }
+
+    .kategoriak ul {
+        padding-left: 0;
+    }
+
+    aside {
+        padding-left: 5px;
+    }
+}
+
+@media(max-width: 410px) {
+    .logo img {
+        display: none;
+    }
+
+    .logo a {
+        font-size: larger;
+    }
+
+    .eredmenyek {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 310px) {
+    .kategoriak ul li {
+        font-size: small;
+    }
+}
+
+@media(max-width: 380px){
+    footer img {
+     max-width: 60%;
+    }
+ 
+    footer {
+     font-size: .8rem;
+    }
+ 
+    h1 {
+     font-size: .7rem;
+    }
+ 
+    .footerc::before {
+     display: none;
+    }
+}
+ 
+
+ 
+@media(max-width: 252px) {
+     .kategoriak h1 {
+         font-size: medium;
+         transform: rotate(90deg);
+         transition: transform 1s;
+         margin-bottom: 30px;
+     }
+}
+ 
+@media(max-width: 174px) {
+     .kategoriak {
+         display: none;
+     }
+}

@@ -1,7 +1,14 @@
+
+header{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    justify-content: space-between;
+}
+
 header li {
     list-style: none;
     text-transform: uppercase;
-    padding: 0 20px;
     display: inline-block;
     font-weight: 550;
     font-size: 0.8rem;
@@ -9,6 +16,12 @@ header li {
 
 header a {
     text-decoration: none;
+    padding: 0 20px;
+}
+
+.utvonalkeret {
+    display: flex;
+    background-color: #811331;
 }
 
 nav ul ul {
@@ -19,16 +32,300 @@ nav ul ul {
 nav ul li:hover > ul {
     display: block;
     z-index: 1;
-    background-color: #fff;
+    background-color: white;
 }
 
-.menusor {
-    text-align: right;
-}
 
 .almenu li {
     width: 9rem;
     display: flex;
     padding: 0.8rem 0;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.almenu li:first-child {
+    padding-top: 2rem;
+}
+
+
+.almenu {
+    padding-left: 0px;
+}
+
+li a:hover {
+    color: darkcyan;
+}
+
+.almenu li a:hover {
+    color: darkolivegreen;
+}
+
+
+.almenu2 li {
+    width: 9rem;
+    display: flex;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.almenu2 li:first-child {
+    padding-top: 2rem;
+}
+
+
+.almenu2 {
+    padding-left: 0px;
+    margin-left: 18px;
+}
+
+.almenu2 li a:hover {
+    color: darkolivegreen;
+}
+
+
+.keret {
+    display: flex;
+}
+
+main {
+    background-color: darkseagreen;
+    width: 80%;
+}
+
+.termekek {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    
+}
+
+
+.utvonalkeret p {
+    color: whitesmoke;
+    padding-left: 10px;
+}
+
+
+.logo a {
+    color: brown;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    font-family: Caflisch Script, Adobe Poetica, cursive;
+}
+
+
+h1 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    border-bottom: 2px solid #ccc;
+}
+
+h1::before {
+    background: brown;
+    bottom: -2px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 60px;
+}
+
+.kartyak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kartyakeret {
+    margin-bottom: 80px;
+    margin-right: 20px;
+    /* border: 1px solid rgb(6, 7, 4); */   
+}
+
+.kartyakeret p {
+    text-align: center;
+    color: rgb(43, 15, 4);
+    font-size: 1.1rem;
+}
+
+.pricerange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricerange p {
+    font-size: 0.6rem;
+    color: #7d7c7c;
+}
+
+aside {
+    padding-left: 25px;
+}
+
+.filter h1 {
+    font-size: 1rem;
+}
+
+.kategoriak ul>li {
+    padding: 1rem 0;
+    border-bottom: 1px dashed rgb(192, 192, 192);
+    
+}
+
+footer {
+    background-color: #110505;
+}
+
+img {
+    transition: opacity 0.6s;
+}
+
+
+.kartyakeret:hover img {
+    opacity: 0.1;
 
 }
+
+.mtext svg {
+   opacity: 0; 
+}
+
+
+.kartyakeret svg {
+    position: relative;
+    left: 80%;
+    bottom: 180px;
+    transition: opacity 0.8s;
+    padding-bottom: 10px;
+}
+
+/* .kartyakeret .sziv {
+    position: relative;
+    bottom: 180px;
+    padding-left: 2px;
+}
+
+.kartyakeret .szem {
+    position: relative;
+    bottom: 180px;
+} */
+
+.mtext{
+    height: 0px;
+}
+
+.kartyakeret:hover svg {
+    opacity: 1;
+    stroke-opacity: 1;
+}
+
+.sziv svg:hover {
+    fill: red;
+    fill-opacity: 0.6;
+}
+
+.szem svg:hover {
+    fill: #811331;
+    fill-opacity: 0.6;
+}
+
+
+
+.kosarlink {
+    border: 1px solid gray;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    width: 65%;
+    position: relative;
+    left: 17%;
+    opacity: 0;
+    bottom: 110px;
+    transition: background-color 0.4s, opacity 0.8s ;
+    
+}
+
+.kosarlink a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.kartyakeret:hover .kosarlink {
+    opacity: 0.4;
+    background-color: rgb(17, 15, 15);
+}
+
+
+.kosarlink:hover a {
+    color: rgb(80, 175, 204);
+}
+
+.eredmenyek {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eredmenyek .rendezes {
+    position: relative;
+    right: 20px;
+    top: 13px;
+}
+
+.rangeinput {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-keret {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerc::before {
+    background: rgb(42, 165, 69);
+    bottom: -2px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 110%;
+}
+
+.footerc {
+    font-size: x-large;
+    color: burlywood;
+}
+
+.footer-horgony {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    padding: 3px;
+}
+
+.footer-horgony a {
+    color: #7d7c7c;
+    padding-top: 10px;
+    transform: ;
+}
+
+.footer-horgony a:hover {
+    color: chartreuse;
+}
+
+@media(max-width: 430px) {
+    .kartyakeret p {
+        font-size: .8rem;
+    }
+
+    .kartyakeret svg {
+        left: 25%;
+        bottom: 150px;
+    }
+}
+

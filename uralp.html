@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termék Visszaküldés</title>
+    <link rel="stylesheet" href="./urlap.css">
+</head>
+<body>
+    <h1 class="side-title">Termék visszaküldés</h1>
+    <div class="background">
+        <p>Kérjük töltse ki az alábbi űrlapot</p>
+        <legend>Megrendelési információk</legend>
+        <div class="order-info">
+            <form action="">
+                <div class="lcontainer">
+                    <label for="vnev">Vezetéknév*</label>
+                    <input type="text" name="vnev" id="vnev">
+                </div>
+                <div class="lcontainer">
+                    <label for="knev">Keresztnév*</label>
+                    <input type="text" name="knev" id="knev">
+                </div>
+                <div class="lcontainer">
+                    <label for="mail">E-mail*</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <div class="lcontainer">
+                    <label for="phone">Telenfonszáma*</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="lcontainer">
+                    <label for="order">Rendelési szám*</label>
+                    <input type="text" name="order" id="order">
+                </div>
+                <div class="lcontainer">
+                    <label for="order-date">Rendelés dátuma</label>
+                    <input type="text" name="order-date" id="order-date">
+                </div>
+            </form>
+        </div>
+        <legend>Termék Információ</legend>
+        <div class="product-info">
+            <form action="">
+                <div class="lcontainer">
+                    <label for="name">Termék neve*</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="lcontainer">
+                    <label for="article-number">Cikkszám*</label>
+                    <input type="number" name="article-number" id="article-number">
+                </div>
+                <div class="vcontainer">
+                    <label for="reason">Visszaküldés oka*</label>
+                    <div class="vacontainer">
+                        <div class="pad">
+                            <label for="reason1">Egyéb, kérjük írja le</label>
+                            <input type="radio" name="reason1" id="reason1">
+                        </div>
+                        <div class="pad">
+                            <label for="reason1">Más termék érkezett</label>
+                            <input type="radio" name="reason1" id="other">
+                        </div>
+                        <div class="pad"> 
+                            <label for="reason1">Nem tetszik</label>
+                            <input type="radio" name="reason1" id="dont-like">
+                        </div>
+                        <div class="pad">
+                            <label for="reason1">Sérült csomagolás</label>
+                            <input type="radio" name="reason1" id="injured">
+                        </div>
+                    </div>
+                </div>
+                <div class="yncontainer">
+                    <label for="openyn">A termék nyitott*</label>
+                    <input type="radio" name="openy" id="openy">
+                    <label for="openy">Igen</label>
+                    <input type="radio" name="openy" id="openn">
+                    <label for="openy">Nem</label>
+                </div>
+                <div class="tarea">
+                    <div class="tarea-text">
+                        <label for="description">Hibaleírás és egyéb adatok</label>
+                    </div>
+                    <div class="cr">
+                        <textarea name="description" id="description" cols="24" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button onclick="back()">Küldés</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <aside>
+        <div class="cat">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="face">
+                <div class="eye eye--left">
+                    <div class="eye-pupil"></div>
+                </div>
+                <div class="eye eye--right">
+                    <div class="eye-pupil"></div>
+                </div>
+                <div class="muzzle"></div>
+            </div>
+        </div>
+    </aside>
+    <script src="./reg.js"></script>
+</body>
+</html>
