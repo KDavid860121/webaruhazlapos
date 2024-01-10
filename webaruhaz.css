@@ -319,6 +319,12 @@ img {
     color: chartreuse;
 }
 
+@media(max-width: 990px) {
+    .footerc::before {
+        display: none
+    }
+}
+
 @media(max-width: 430px) {
     .kartyakeret p {
         font-size: .8rem;
