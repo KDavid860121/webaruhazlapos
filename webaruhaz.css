@@ -267,6 +267,7 @@ img {
 .eredmenyek {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .eredmenyek .rendezes {
